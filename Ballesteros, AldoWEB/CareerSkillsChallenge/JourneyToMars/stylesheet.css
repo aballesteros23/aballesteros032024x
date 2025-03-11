@@ -1,0 +1,159 @@
+
+body{
+   padding-top: 0rem;
+   background-image: url(Img/orangespace32.avif); background-repeat: no-repeat; background-size: cover;
+   background-color: black;
+}
+
+
+#container{
+    border:2px solid black;
+    border-top: none;
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    background-color:#C27436;
+}
+
+#wrapper{
+    max-width: 1500px;
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "hea hea hea"
+    "asi mai mai"
+    "mai2 mai2 mai2"
+    "foo foo foo"
+    
+    ;
+    
+    
+}
+
+a{
+    padding: .5rem;
+    color: black;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s;
+}
+
+a:hover{
+  
+    color: peachpuff;
+    opacity: 1;
+  
+}
+li{
+    font-size: 1.5rem;
+    color: white;
+   
+   transition: all 1s;
+}
+li:hover{
+opacity: 1;
+  
+   
+}
+ul{
+   
+    padding: 0rem;
+    list-style-type:none;
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+ 
+    
+}
+
+
+
+nav{
+    border: 3px solid black;
+   z-index: 3;
+    opacity: 1;
+    position: sticky;
+    margin-top: -10px;
+    margin:auto;
+    width: 1500px;
+    height: 50px;
+    top:0px;
+    background-color:#d35f3f;
+}
+
+#title{
+    font-size: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+#icon{
+background-image: url(Img/marsicon.webp); background-repeat: no-repeat; background-size: cover;
+position: abasolute;
+transform: scale(.4);
+height: 90px;
+width: 90px;
+border-radius: 50%;
+box-shadow: 1px 2px 50px 2px black;
+margin-top: -162px;
+margin-left: 880px;
+z-index: 0;
+}
+
+header{
+    background-image: url(Img/marsland.webp); background-repeat: no-repeat; background-size: cover;
+    background-color: #BF6836;
+    padding-top: 1rem;
+    min-height: 200px;
+    border-top: none;
+    border: 2px solid black;
+    grid-area: hea;
+
+}
+ 
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .5rem;
+    color: black;
+
+   
+}
+p{
+    line-height: 1.7;
+    padding: .5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+
+    border: 2px solid black;
+    min-height: 900px;
+   
+    background-color: #BF6836;
+    grid-area: mai;
+
+}
+
+#main2{
+    border: 2px solid black;
+    min-height: 300px;
+    background-color: #BF6836;
+    grid-area: mai2;
+}
+
+aside{
+    border: 2px solid black;
+    width:100% ;
+    width: 300px;
+    min-height: 500px;
+    background-color: #BF6836;
+    grid-area: asi;
+}
+
+footer{
+    border: 2px solid black;
+    min-height: 200px;
+    background-color: #BF6836;
+    grid-area: foo;
+}

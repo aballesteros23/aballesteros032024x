@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays for Each</title>
+</head>
+<body>
+    <h1>Arrays for Each</h1>
+
+    <script>
+
+
+        let myFriends;
+        myFriends = []   
+
+        
+        myFriends[0] = "David"           
+        myFriends[1] = "Juan"            
+        myFriends[2] = "Zuriel"      
+        myFriends[3] = "Aldo2"        
+        myFriends[4] = "Erick"        
+        myFriends[5] = "Jonathan"        
+        myFriends[6] = "Big Jonathan"        
+        myFriends[7] = "Issac"        
+        myFriends[8] = "Keveon Kuts"        
+        myFriends[9] = "Edgar"        
+             
+
+        
+        window.document.write(myFriends);
+
+        
+        myFriends.push('David');
+        myFriends.push('Aldo2');
+
+        
+        console.log(myFriends);
+
+
+        myFriends.pop(); 
+        myFriends.shift(); 
+
+      
+        myFriends.unshift('Erick');
+
+        console.log(myFriends.length);
+
+
+        myFriends.forEach( function(bob) 
+        {
+
+            console.log("I'm liderly " + bob);
+
+        }
+            );
+
+
+            myFriends.forEach(  function(f)    
+        {
+            console.log ("I mess with " + f)
+        }  
+                );  
+                
+
+          myFriends.forEach ( function( fl, index)
+        {
+            window.alert(fl + " is index" + index);
+        }
+
+    
+        );
+
+
+
+
+    </script>
+</body>
+</html>

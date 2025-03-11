@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3</title>
+    <style>
+        /* Mobile Design */
+
+        body{}
+        #pageheader{
+
+        }
+
+        #topnav ul{}
+
+        #container{
+            background-color: peachpuff;
+            max-width: 1200px;
+            width: 90%;
+            padding: 1rem;
+            padding-top: 100px;
+            padding:20px;
+            margin: auto;
+        }
+
+        #wrapper{
+            background-color: green;
+            max-width: 90%;
+            padding: 1rem;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat (8, minmax(150px, auto));
+             ;
+            grid-template-areas:
+            "medi"
+            "midn"
+            "main"
+            "sec1"
+            "sec2"
+            "sec3"
+            "pagef"
+            "subf";
+        }
+        #media{
+            background-color: blue;
+            padding: 1rem;
+            grid-area: medi;
+            position: relative;
+        }
+        #logo{
+            background-color: red;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        } 
+
+        #midnav{
+            background-color: antiquewhite;
+            padding: 1rem;
+            grid-area: midn;
+        }
+
+        #midnav ul{
+
+        }       
+
+        main{
+            background-color: white;
+            padding: 1rem;
+            grid-area: main;
+        }
+        
+        /*Three sections */
+        .cards{
+            background-color: whitesmoke;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        #sectionone{grid-area:sec1;}
+        #sectiontwo{grid-area:sec2;}
+        #sectionthree{grid-area:sec3;}
+
+        #pagefooter{
+            background-color: gray;
+            padding: 1rem;
+            grid-area: pagef;
+        }
+
+        #subfooter{
+            background-color: darkcyan;
+            padding: 1rem;
+            grid-area: subf;
+        }
+
+        /* Deskopt Design */
+
+        @media screen and (min-width:768px)
+        {
+            #wrapper{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 
+                minmax(300px, auto) 
+                minmax(500px, auto)
+                 minmax(250px, auto) 
+                 minmax(150px, auto) 
+                 minmax(150px, auto) ;
+                grid-template-areas: 
+                "medi medi medi"
+                "midn main main"
+                "sec1 sec2 sec3"
+                "pagef pagef pagef"
+                "subf subf subf"
+                
+                ;
+            }
+
+            #logo{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="pageheader">
+        #pageheader
+        <nav id="topnav">
+            <ul>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="container">
+        <div id="wrapper">
+           
+
+            <div id="media">
+                #media
+                <div id="logo"></div>
+            </div>
+
+                <nav id="midnav">
+                    #midnav
+                    <ul>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                        <li>Yahoo</li>
+                    </ul>
+
+                </nav>
+
+                <main>
+                    main - layouthree
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsum tempore aliquam eos facere architecto ipsam voluptatibus facilis modi rem id placeat omnis corrupti, beatae sunt, est nesciunt hic voluptate deserunt eveniet natus ex, ratione officia. Provident ipsa consectetur qui cum dolore, amet, laudantium accusamus saepe, esse reprehenderit at corporis error vel recusandae doloremque veniam! Earum, reiciendis quisquam a vitae quo molestias provident quis vero saepe, laboriosam debitis blanditiis totam, corrupti inventore tempore nisi autem laborum dolores at repellat. Eligendi eaque, sed eos libero assumenda quos ex tenetur reiciendis. Id eaque accusamus veniam iusto aspernatur? Quidem vel corporis iusto soluta, sequi minus iure. Atque dicta inventore, animi nulla deleniti ipsa ex. Enim consectetur necessitatibus explicabo ut laboriosam nam similique veritatis at ducimus? Quae a sequi voluptatibus aliquid distinctio pariatur animi et vitae? Quisquam, deserunt. Numquam assumenda cumque labore! Molestias ea iusto officia odio dolorum ab, asperiores blanditiis suscipit ipsum vitae. Deleniti numquam incidunt vero quidem quae, praesentium aliquam sequi blanditiis libero culpa. Aliquid reprehenderit cum, debitis rerum cumque vero hic sequi adipisci maxime dolor quaerat iusto assumenda omnis sunt ea sapiente illo voluptatibus eius. Autem laudantium nam, odit incidunt magni, consequatur in obcaecati, quam atque placeat omnis! Maxime alias nisi recusandae modi nobis harum cupiditate cum porro voluptatum, esse omnis consequatur quia blanditiis consectetur voluptatem molestiae ex obcaecati repudiandae quos laudantium quis eius beatae? Voluptate perspiciatis non nihil animi ullam vel a possimus modi voluptatibus, dolorem, doloribus ipsam nam, nesciunt quod adipisci ducimus delectus repudiandae! Aut, beatae vel. Labore dignissimos alias voluptates consequatur ipsa, ipsam cumque eos molestias natus accusantium perferendis aut cupiditate voluptatibus aperiam quis, adipisci neque blanditiis unde provident officia eveniet dolores! Eos nesciunt illo temporibus, doloremque unde nobis dolorem voluptates placeat? Nulla ratione mollitia cum obcaecati consectetur eius. Nam perferendis, quidem tempora magnam voluptatum at delectus fugiat voluptas eligendi. Cumque asperiores inventore voluptas cupiditate quaerat voluptatum maiores. Nihil cum exercitationem laboriosam praesentium accusantium modi nostrum eaque repellat qui voluptate laudantium quia, sed ipsam recusandae, minus dignissimos amet optio laborum error aliquid sint labore doloribus nemo suscipit. Earum dolores id, reprehenderit, error ipsam non voluptatum culpa corporis illo, quidem facere. Autem, ratione aliquid! Magni earum optio officiis mollitia tempore molestiae ipsa sequi nostrum asperiores dolore. Incidunt a placeat autem unde! Sit porro illum culpa modi, dolore pariatur repudiandae nulla magnam accusamus hic vel maiores autem tempora delectus dolores fugiat neque temporibus explicabo et error. Facilis hic temporibus perferendis voluptatem error, nulla perspiciatis impedit? Repellendus, aut. Totam esse placeat eveniet cupiditate dicta, incidunt ratione saepe voluptates aut maxime repellat itaque provident minus exercitationem praesentium voluptatibus ullam cumque odio rem reprehenderit magni. Ad praesentium odit adipisci cumque sunt minima iste quis veritatis magni fugit quae iure molestias mollitia porro esse, et recusandae doloribus qui officiis quasi ex, perferendis amet tempora. Cumque omnis debitis autem rem, placeat eligendi ab neque voluptate sed maxime est provident voluptas, expedita velit commodi magni hic modi! Maxime, officiis nemo nostrum accusantium iure est, eligendi voluptatum quidem, exercitationem similique harum rem quod ut quas animi fugiat laboriosam aut ab? Maiores deserunt eveniet possimus, cum ex animi quasi maxime temporibus incidunt! Sit quia tempora accusamus minus modi fuga inventore itaque dignissimos nostrum, accusantium atque rerum nulla, debitis iste quam dicta, doloribus odio fugiat eveniet vitae. Alias nobis perspiciatis repudiandae optio, a veniam nihil esse officiis placeat omnis accusantium dignissimos nulla, in voluptatibus at facere ut! Est, maiores minima! Est illo, rem iusto eligendi a, atque laudantium temporibus cupiditate quod harum blanditiis? Dolore consequuntur eius repellendus reiciendis libero. Ad a iure corrupti. Aliquid exercitationem dicta placeat id ab perspiciatis quisquam a? Fugit ab ipsum non? Aperiam alias autem suscipit dolore sint maxime recusandae sit, temporibus corporis harum similique consequatur praesentium repudiandae officia. Quaerat nisi magni iste ipsum sint quasi, ratione earum totam tenetur nulla soluta quos numquam nemo, maiores deserunt maxime illum suscipit commodi labore mollitia veniam hic tempore veritatis rem. Veniam natus quaerat nostrum iusto itaque sit maxime explicabo consequuntur incidunt molestias, inventore rerum ipsam temporibus corrupti dolor provident commodi reiciendis quibusdam illum officia praesentium sed hic voluptate ratione. Eaque natus placeat enim cumque aspernatur iusto repellendus perferendis possimus ullam, sunt dolores a maiores delectus quibusdam quia vitae explicabo dolorum modi beatae aliquam impedit vero nobis officiis. Quas necessitatibus repudiandae nisi fugit error atque aperiam temporibus neque quam sed, voluptates maxime officiis unde voluptas modi nobis, cumque fuga eos aut debitis mollitia recusandae odio, ipsam dignissimos! Perferendis quod labore sint, quibusdam inventore officia nesciunt a explicabo dicta, quos neque autem perspiciatis porro cupiditate natus non laborum impedit itaque maxime beatae ad culpa repellat magni quidem! Pariatur id impedit consequuntur commodi eos! Maiores impedit in, unde veritatis animi quibusdam possimus repellendus corrupti consectetur alias mollitia numquam cum totam quos sit magni adipisci? Libero natus tempora molestias soluta, quis debitis, porro, ratione corporis quisquam consectetur perferendis eveniet ipsam esse. Ex reprehenderit, quia ea eveniet molestiae modi fuga culpa temporibus, nulla itaque in asperiores deleniti perferendis labore! Nam accusantium fugiat sint assumenda dolore nobis repudiandae obcaecati maxime doloremque culpa, quas eveniet rem voluptatem eaque, nihil aliquam numquam odio velit aut ipsam iste tenetur. Iste facilis deserunt saepe optio repudiandae aliquam nisi debitis accusantium, iure asperiores aspernatur eligendi aliquid rem, enim sed? Eius reprehenderit atque a sunt esse tempora sapiente ab unde impedit, consequuntur amet repellat quod ea, velit quos saepe dolores incidunt. Corrupti labore eos, laboriosam autem quibusdam, esse obcaecati porro voluptate nobis fugiat quam dicta ut? Sequi id culpa esse nisi dignissimos maiores cumque, est, ducimus dicta fugiat rerum sapiente impedit ex dolorum, officia quisquam totam? In rem magnam, odio alias nihil veniam? Illum, at, delectus et ipsum minima accusamus molestiae debitis totam facere alias iusto voluptas, velit exercitationem error. Distinctio ad obcaecati explicabo rerum quis vel non aut praesentium, doloremque, a omnis, quos consequatur? Veniam recusandae repellat similique unde, est ex, voluptatum quae eos at itaque magnam aperiam non. Cum, voluptates nihil ratione distinctio ullam porro sapiente labore laudantium soluta, nesciunt quo, quasi tempore culpa quidem repellendus. Accusamus dignissimos voluptatum nostrum suscipit debitis illum quasi non aspernatur rem?</p>
+                </main>
+
+                <section id="sectionone"    class="cards">  sectionone</section>
+                <section id="sectiontwo"    class="cards">  sectiontwo</section>
+                <section id="sectionthree"  class="cards">  sectionthree</section>
+
+                <footer id="pagefooter">pagefooter</footer>
+                <footer id="subfooter">subfooter</footer>
+        </div>  <!--end of wrapper -->
+
+    </div> <!--  end of conatiner --> 
+</body>
+</html>

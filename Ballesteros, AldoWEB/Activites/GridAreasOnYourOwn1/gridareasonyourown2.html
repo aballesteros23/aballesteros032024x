@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #333;
+            padding-top: 1rem;
+            color:black;
+            text-shadow: 2px 2px 2px white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #container{
+            background-color:purple ;
+            max-width: 1200px;
+            width: 80%;
+            gap: 10px;
+            margin: auto;
+            border: 5px solid black;
+            animation-name: bright;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bright{
+            0%{
+                box-shadow: 0px 0px 0px 0px none;
+            }
+            50%{
+                box-shadow: 0px 0px 30px 0px white;
+            }
+            100%{
+                box-shadow: 0px 0px 0px 0px none;
+            }
+        }
+
+    #wrapper{
+        padding: 1rem;
+        display: grid;
+        margin: auto;
+        width: 80%;
+        gap: 5px;
+       grid-template-areas:
+        "hea hea hea"
+        "int int int"
+        "nav nav nav"
+        "pag pag pag"
+        "ca1 ca1 ca1"
+        "ca2 ca2 ca2"
+        "foo foo foo"
+        "det det det"
+       
+       ;
+    }
+
+    #pageheader{
+        padding: 1rem;
+        min-height: 200px;
+        background-color: red;
+        grid-area: hea;
+        border: 5px solid black;
+    }
+
+    #mainnav{
+        padding: 1rem;
+        min-height: 200px;
+        background-color: blue;
+        grid-area: nav;
+        border: 5px solid black;
+    }
+    #intromedia{
+        background-color: khaki;
+        padding: 1rem;
+        min-height:300px ;
+        grid-area: int;
+        border: 5px solid black;
+    }
+
+     #pagemain{
+        background-color: aquamarine;
+         padding: 1rem;
+         min-height: 300px;
+         grid-area: pag;
+         border: 5px solid black;
+        }
+
+    #card001{
+        background-color: #fff;
+        padding: 1rem;
+        min-height:150px;
+        grid-area: ca1;
+        border: 5px solid black;
+    }
+    #card002{
+        background-color: blanchedalmond;
+        padding: 1rem;
+        min-height:150px;
+        grid-area: ca2;
+        border: 5px solid black;
+    }
+
+    #pagefooter{
+        background-color: gray;
+        padding: 1rem;
+        min-height: 200px;
+        grid-area: foo;
+        border: 5px solid black;
+    }
+    #pagedetails{
+        background-color: orange;
+        min-height: 300px;
+        padding: 1rem;
+        grid-area: det;
+        border: 5px solid black;
+    }
+
+    @media screen and (min-width: 768px)
+    {
+        #wrapper{
+       grid-template-areas:
+        "hea hea hea"
+        "int int int"
+        "nav pag pag"    
+        "nav ca1 ca2"
+        "foo foo foo "
+        "det det det"
+       
+     ;  
+    }
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">pageheader</header>
+            <nav id="mainnav">mainnav</nav>
+            <div id="intromedia">intromedia</div>
+            <main id="pagemain">pagemain</main>
+            <section id="card001">card001</section>
+            <section id="card002">card002</section>
+            <footer id="pagefooter">pagefooter</footer>
+            <footer id="pagedetails">pagedetails</footer>
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>

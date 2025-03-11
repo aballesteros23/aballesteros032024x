@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: red;
+            padding-top: 1rem;
+        }
+        #container{
+            background-color: purple;
+            max-width: 1200px;
+            width: 80%;
+            gap: 10px;
+            margin: auto;
+            border: 2px solid white;
+        }
+        #wrapper{
+            display: grid;
+            margin: auto;
+            background-color: black;
+            padding: 1rem;
+            gap: 10px;
+            width: 80%;
+            grid-template-areas: 
+            "hea hea hea"
+            "nav nav nav"
+            "int int int"
+            "mai mai mai"
+            "asi asi asi"
+            "ca1 ca1 ca1"
+            "ca2 ca2 ca2"
+            "ca3 ca3 ca3"
+            "foo foo foo"
+            "det det det"
+        
+            ;
+
+           
+            
+        }
+        #pageheader{
+            background-color: orange;
+            grid-area: hea;
+            min-height: 200px;
+            padding: 1rem;
+        }
+        #mainnav{
+            background-color: lavender;
+            grid-area: nav;
+            padding: 1rem;
+            min-height: 150px;
+
+        }
+        #intromedia{
+            background-color: indigo;
+            grid-area: int;
+            padding: 1rem;
+            min-height: 250px;
+
+        }
+        #pagemain{
+            background-color: white;
+            grid-area: mai;
+            padding: 1rem;
+            min-height: 260px;
+
+        }
+        #pageaside{
+            background-color: teal;
+            grid-area: asi;
+            padding: 1rem;
+            min-height: 200px;
+        }
+        #card001{
+            background-color: saddlebrown;
+            grid-area: ca1;
+            padding: 1rem;
+            min-height: 120px;
+
+        }
+        #card002{
+            background-color: palegoldenrod;
+            grid-area: ca2;
+            padding: 1rem;
+            min-height: 120px;
+
+        }
+        #card003{
+            background-color: wheat;
+            grid-area: ca3;
+            padding: 1rem;
+            min-height: 120px;
+
+        }
+        #pagefooter{
+            background-color: pink;
+            grid-area: foo;
+            padding: 1rem;
+            min-height: 100px;
+
+
+        }
+        #pagedetails{
+            background-color: magenta;
+            grid-area: det;
+            padding: 1rem;
+            min-height: 270px;
+        }
+        
+
+        @media screen and (min-width: 768px)
+        {
+
+            #wrapper{
+                grid-template-areas:
+                "hea hea hea"
+                "nav nav nav"
+                "int int int"
+                "mai mai asi"
+                "ca1 ca2 ca3"
+                "foo foo foo"
+                "det det det"
+                ;
+            }
+
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+
+            <header id="pageheader">pageheader</header>
+            <nav id="mainnav">mainnav</nav>
+            <div id="intromedia">intromedia</div>
+            <main id="pagemain">pagemain</main>
+            <aside id="pageaside">pageaside</aside>
+            <section id="card001">card001</section>
+            <section id="card002">card002</section>
+            <section id="card003">card003</section>
+            <footer id="pagefooter">pagefooter</footer>
+            <footer id="pagedetails">pagedetails</footer>
+
+        </div>
+
+    </div>
+</body>
+</html>
