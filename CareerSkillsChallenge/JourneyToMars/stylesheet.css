@@ -155,6 +155,7 @@ footer{
     float: right;
     box-shadow: 2px 2px 2px 2px black;
     margin: 1rem;
+    max-width: 600px;
 }
 
 img{
