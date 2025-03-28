@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aldo Ballesteros - Portfolio</title>
+    <title>Aldo Ballesteros - Work Samples</title>
     <link rel="stylesheet" href="indexstyle.css">
     <style>
-       
+        iframe{
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+
+        }
     </style>    
 </head>
 <body>
@@ -30,33 +38,33 @@
                
             </nav>
 
-
-            
-            <nav id="pagenav">
-            
-            <a href="#career">Career</a> |
-
-              <a href="#semester1">Semester 1</a>  |
-
-             <a href="#semester2">Semester 2</a>
-
             </nav>
 
 
-            <div id="media">
+            <!-- <div id="media">
               
                 <iframe src="https://www.youtube.com/embed/0NJCMuNfWzI?si=kl9d_Hp-_SNNF1-G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+            </div> -->
      
-            <main id="pagemain">
-                <h1>Aldo Ballesteros</h1>
-                <h2>Portfolio</h2>
-                <img  id="heroimage" src="img/almond-flour3.jpg" alt="webapps">
+             <main id="pagemain">
+                <h1>Work Samples</h1>
+                <!-- <img  id="heroimage" src="img/almond-flour3.jpg" alt="webapps"> -->
                 <p>
-                    Welcome to my Portfolio. My name is Aldo Ballesteros and my favorite sport to play is soccer. I like to play games alot, I have many pets. I got one dog, 7 birds and 7 fish. My favorite holiday is christmas and I'm not a big fan of school.
+                    
+                    <h2>Arugmentative Essay</h2>
+                    <iframe src="PDDdocs/Argumentative Essay Final.pdf" frameborder="0"></iframe>
+                    <h2>Spanish AP Presentation</h2>
+                    <iframe src="PDDdocs/Mi Calidad De Vida.pdf" frameborder="0"></iframe>
+                    <h2>Lab Report</h2>
+                    <iframe src="PDDdocs/Lab Report.pdf" frameborder="0"></iframe>
+                    <h2>Refleccion De Salud</h2>
+                    <iframe src="PDDdocs/Refleccion De Salud.pdf" frameborder="0"></iframe>
+                    <h2>Arte En La Communidad</h2>
+                    <iframe src="PDDdocs/Arte En La Communidad.pdf" frameborder="0"></iframe>
+                </body>
                 </p>
-            </main>
-            <section id="career">
+            </main> 
+            <!-- <section id="career">
                <h2>Career</h2>
                 <a name ="Career"></a>
   
@@ -81,9 +89,9 @@
 
 
 
-            </section>
+            </section> -->
 
-            <section id="semester1" class="semester">
+            <!-- <section id="semester1" class="semester">
                 <h2>Semester 1</h2>
                 <a name ="semester1"></a>
                 <ul>
@@ -97,9 +105,9 @@
                     <li><a href="Semester1/A029J3A/a029j3a.html">A029J3a</a></li>
                 </ul>
 
-            </section>
+            </section> -->
 
-            <section id="semester2" class="semester">
+            <!-- <section id="semester2" class="semester">
                <h2>Semester 2</h2>
                <a name="semester2">
 
@@ -139,7 +147,7 @@
                 </ul>
                 
                </a>
-            </section>
+            </section> -->
 
             <!-- begin footer -->
             <footer id="pagefooter">
@@ -191,6 +199,15 @@
     <!-- end the container -->
 
     <script>
+
+
+window.addEventListener('resize', refresh)
+
+function refresh()
+{
+   window.location.reload(true);
+}
+
         function addclass(){ 
         //window.alert("clicked");
         let e; //element variable

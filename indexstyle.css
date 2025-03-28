@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #9A7B4F;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#container{
+    background-color:blanchedalmond;
+    
+    width:90%;             
+    max-width: 1200px;
+    margin:0 auto; 
+    padding:1.2rem;
+    border-radius:1.5rem;
+    
+}
+
+
+#wrapper{
+
+    border-radius:1.9rem;                                                                                            
+    padding:1.2rem;
+    margin:0 auto;
+    max-width: 960px;
+}
+
+
+#pageheader{
+    background-color:beige;
+    min-height:250px;
+    padding:1rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-image: url(Img/Almond.jpg);
+}
+
+#logo{
+    width:150px;
+    height:150px;
+    background-color: none;
+    border-radius:50%;
+    padding:1.5rem;
+    box-sizing:border-box;
+    position: relative;
+    right:25px;
+    top:-25px;
+    background-image: url(Img/awesomelogo3.jpg);
+    background-size: cover;
+}
+
+
+blockquote{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: burlywood;
+    text-shadow: 2px 2px 2px black;
+}
+
+#quote{
+   
+    text-align: right;
+    color: burlywood;
+    text-shadow: 1px 1px 1px black;
+    width:80%;
+    margin: auto;
+}
+
+
+#pagenav{
+    background-color: bisque;
+    padding:1rem;
+    color:black;
+    text-shadow: 1px 1px 1px black;
+     border-top: 3px solid black;
+     border-bottom: 3px solid black;
+    text-align: center;
+   
+}
+
+
+    #pagenav a{
+        color:black;
+        
+    }
+
+    #topnav{
+    background-color: #ffe4c4;
+    color:brown;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    text-align: center;
+   border-top: 1px solid white;
+   
+   
+}
+
+
+
+
+
+#media{
+    min-height: 250px;
+    background-color: bisque;
+    padding:1rem;
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+iframe{
+    width:80%;
+    background-color: white;
+    aspect-ratio:16/9;
+    margin:auto;
+    display:block;
+}
+
+#pagemain{
+    min-height:250px;
+    padding:1rem;
+    background-color: bisque;
+}
+img#heroimage{
+    max-width:50%;
+    margin:auto;
+    display:block;
+    border-radius: 1rem;
+}
+
+
+
+#career{
+    background-color: bisque;
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.semester{
+    background-color: bisque;
+    min-height:200px;
+    padding: 1rem;
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
+    border-top:1px solid white;
+}
+
+
+#semester1{
+    background-color: bisque;
+}
+
+
+#semester2{
+    background-color: bisque;
+}
+
+
+#pagefooter{
+    background-color: bisque;
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    text-align: center;
+   border-top: 1px solid white;
+   
+   
+}
+
+#singlealmond{
+    background-image: url(Img/singlealmond.png);
+    position: relative;
+    width: 125px;
+    height: 190px;
+    background-repeat: no-repeat;
+   left:-120px ;
+   transform: rotate(25deg);
+   top: -300px;
+
+}
+
+#subfoooter{
+    background-color: bisque;
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    text-align: center;
+    min-height: 150px;
+    border-radius: 0 0 1.5rem 1.5rem;
+    border-top: px solid white;
+}
+a{
+    color:black;
+
+}
+button{
+    padding: .2rem;
+    background-color: white;
+   
+  
+}
+
+button:hover{
+ background-color: darkgreen;
+}
+
