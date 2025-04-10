@@ -1,0 +1,356 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding:0;
+    background-image: url(Imagesfornewyork/newyorkbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+header{
+    background-color: rgba(0,0,0,.8);
+    min-height: 80px;
+    padding: 1rem;
+    text-align:  center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: 3;
+    font-family: "Jaro", sans-serif;
+    
+
+}
+
+header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-left: 110px;
+   
+    
+}
+
+#wrapper{
+    background-color: none;
+    width: 80%;
+    max-width: 1200px;
+    margin:auto;
+    margin-top: 50px;
+    opacity: 2rem;
+    
+}
+
+
+#topnav{
+    background-color: black;
+    padding: 1rem;
+    min-height: 150px;
+
+    
+}
+
+#topnav a{
+    color: white;
+    text-decoration: none;
+}
+
+#topnav a:hover{
+    color: red;
+    
+}
+
+#topnav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align:center
+}
+
+#topnav ul li{
+    border:1px solid #333;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+#topnav ul li:hover{
+    background-color: #28282B;
+    
+    
+}
+
+#media{
+    background-color: blue;
+    padding: 1rem;
+    min-height: 300px; 
+    background-image: url(Imagesfornewyork/statueofliberty.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 1200px;
+    
+}
+
+main{
+    background-color:black;
+    color:white;
+    padding: 1rem;
+    min-height: 400px;
+    border-bottom: 2px solid black;
+    line-height: 1.6;
+    
+}
+
+main h1{
+    text-align: center;
+}
+
+main video{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    aspect-ratio: 640/360 ;
+}
+
+#cards{
+    background-color: gray;
+    padding: 1rem;
+    min-height: 300px;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+article{
+    min-height: 150px;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+   
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    min-height: 50px;
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    text-shadow: 0px 0px 0px white;
+}
+
+@keyframes blink{
+
+    0%
+    {
+        text-shadow: 0px 0px 0px white;}
+
+
+    50%
+    {
+        text-shadow: 0px 0px 5px white;
+    
+    }
+
+    100%{
+        text-shadow: 0px 0px 0px white;
+    }
+}
+
+
+#logomedia{
+    background-color: black;
+    display: block;
+}
+
+#logomedia img{
+    display: block;
+    margin: auto;
+}
+
+#logodesktop{
+    display: none;
+}
+
+#cards article{
+       background-color: red;
+       background-position: center center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       max-width: 400px;
+       aspect-ratio: 4/3;
+       filter: grayscale(100%);
+       border: 5px solid black;
+       transition: all .5s;
+    }
+
+    #cards article:hover{
+        filter: grayscale(0%);
+        box-shadow: 1px 1px 5px 5px black;
+        border: 5px solid white;
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+
+    #bronx{
+        background-image: url(Imagesfornewyork/bronxcard.jpg);
+
+    }
+    #brooklyn{
+        background-image: url(Imagesfornewyork/brooklyncard.jpg);
+r
+    }
+    #manhattan{
+        background-image: url(Imagesfornewyork/manhattancard.jpg);
+
+    }
+    #queens{
+        background-image: url(Imagesfornewyork/queencrad.jpg);
+
+    }
+    #statenisland{
+        background-image:url(Imagesfornewyork/statenislandcard.jpg);
+
+    }
+    
+    #cards article h3{
+        background-color: rgba(255, 255, 255, .7);
+        padding: .5rem;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-top: -10px;
+        
+    }
+
+    video{
+        border: 2px solid white;
+    }
+
+    
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 990px)
+{
+    #topnav ul {
+        flex-direction: row;
+    }
+
+    #topnav{
+        min-height:00px;
+        padding: 0.025;
+        position:sticky;
+        top:100px;
+        z-index: 3;
+    }
+
+    #topnav ul li{
+        border:none;
+
+    }
+
+    #topnav ul li:hover{
+        background-color: black;
+    }
+
+    header{
+        display: block;
+        background-color: black;
+    }
+
+    #logomedia{
+        display: none;
+    }
+
+    #wrapper{
+        margin-top: 200px;
+        background-color: black;
+    }
+
+    #topnav ul li:hover{
+        box-shadow: 0px 2px 5px 2px white;
+        cursor: pointer;
+         transform: scale(1.05);
+         animation-name: wow;
+         animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+        
+    }
+
+    main h1{
+        text-align: left;
+    }
+
+    main video{
+        display: block;
+    }
+
+    @keyframes wow{
+
+        0%
+        {
+                box-shadow: 0px 2px 5px 2px white;}
+
+
+        50%
+        {
+            box-shadow: 0px 0px 0px 0px white;
+
+        }
+
+    100%{
+        box-shadow: 0px 2px 5px 2px white;
+        }
+}
+
+
+    #logodesktop{
+        display: block;
+        position: absolute;
+        transform: rotate(0deg);
+        top: -153px;
+        left: 0;
+        animation-name: tilt;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+    }
+
+    @keyframes tilt{
+
+        0%{
+
+            transform: rotate(0deg);
+        }
+
+        50%{
+            transform: rotate(5deg);
+        }
+
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+}

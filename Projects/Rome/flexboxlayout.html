@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Rome</title>
+    <style>
+        #container{
+            width: 90%;
+            margin: auto;
+            background-color: purple;
+            padding: 2rem;
+        }
+
+
+        #wrapper{
+            width: 90%;
+            margin: auto;
+            background-color: green;
+            
+        }
+
+        #pageheader{
+            min-height: 120px;
+            background-color: orange;
+            padding: .5rem;
+        }
+
+        #media{
+            min-height: 120px;
+            background-color: lime;
+            padding: .5rem;
+        }
+        #sidenav{
+            min-height: 120px;
+            background-color: aqua;
+            padding: .5rem;
+            flex: 1;
+        }
+        #pagemain{
+            min-height: 120px;
+            background-color: white;
+            padding: .5rem;
+            flex: 3;
+        }
+        #footer{
+            min-height: 120px;
+            background-color: silver;
+            padding: .5rem;
+        }
+
+        @media screen and (min-width:600px)
+        {
+            body{
+                background-color: red;
+            }
+
+            #fb001{
+                flex-direction: row;
+                min-height: 500px;
+                
+            }
+        }
+
+        #fb001{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">#pageheader</header>
+            <div id="media">#media</div>
+            <div id="fb001">
+                <nav id="sidenav">#sidenav</nav>
+                <main id="pagemain">#pagemain</main>
+            </div>
+            <footer id="footer">#pagefooter</footer>
+
+
+        </div>
+        <!-- end the wrapper -->
+    </div>
+    <!-- end the container -->
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome toRome</title>
+<style>
+
+    body{
+        margin: 0;
+
+    }
+
+
+
+    #container {
+        margin-top: 150px;
+width: 90%;
+background-color: purple;
+margin: auto;
+padding: 2rem;
+max-width: 1200px;
+
+}
+
+
+#wrapper {
+width: 90%;
+background-color: green;
+margin: auto;
+
+}
+
+
+#pageheader {
+min-height: 120px;
+background-color: orange;
+padding: 0.5rem;
+position: sticky;
+top: 0;
+left: 0;
+right: 0;
+}
+
+
+#media {
+min-height: 120px;
+background-color: lime;
+padding: 0.5rem;
+grid-area: me;
+}
+
+
+#sidenav {
+min-height: 120px;
+background-color: lightblue;
+padding: 0.5rem;
+grid-area: sn;
+}
+
+
+#pagemain {
+min-height: 120px;
+background-color: white;
+padding: 0.5rem;
+grid-area: pm;
+}
+
+
+#pagefooter {
+min-height: 120px;
+background-color: silver;
+padding: 0.5rem;
+grid-area: pf;
+}
+
+
+
+@media screen and (min-width:700px)
+{
+    body{
+        background-color: red;
+    }
+
+    #wrapper{
+        display: grid;
+        grid-template-areas: 
+        "me me me me"
+        "sn pm pm pm"
+        "pf pf pf pf"
+    }
+
+    #sidenav{
+        min-height: 500px;
+    }
+
+}
+</style>
+</head>
+<body>
+    <header id="pageheader">#pageheader</header>
+<div id="container">
+    
+<div id="wrapper">
+
+<div id="media">#media</div>
+<nav id="sidenav">#sidenav</nav>
+<main id="pagemain">#pagemain</main>
+<footer id="pagefooter">#pagefooter</footer>
+</div>
+<!-- end wrapper -->
+</div>
+<!-- end container -->
+</body>
+</html>
