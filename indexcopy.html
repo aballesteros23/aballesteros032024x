@@ -4,34 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aldo Ballesteros - Portfolio</title>
-    <link id="stylelink" rel="stylesheet"     href="indexstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
     <style>
-        /* #career ul{
-        background-color: red;
-        list-style-type:none ;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-       }
-
-       #career .container ul li{
-       background-color: white;
-       color: black;
-       border: 1px solid black;
-       width: 120px;
-       height: 120px;
-       padding: 1rem;
-       text-align: center;
-       }
-
-       #career li img{
-        width: 50%;
-        display:block;
-        margin: auto;
-        
-       } */
        
     </style>    
 </head>
@@ -43,10 +17,10 @@
           <a href="https://aballesteros032024.netlify.app/"> <div id="logo"></div>  </a>      
 
 
-                <!-- <blockquote>
+                <blockquote>
                     "They will try to close the door on you, just open it"
                 </blockquote>
-                <p id="quote"> -DJ Khaled </p> -->
+                <p id="quote"> -DJ Khaled </p>
 
             </header>
             <nav id="topnav">
@@ -82,39 +56,32 @@
                     Welcome to my Portfolio. My name is Aldo Ballesteros and my favorite sport to play is soccer. I like to play games alot, I have many pets. I got one dog, 7 birds and 7 fish. My favorite holiday is christmas and I'm not a big fan of school.
                 </p>
             </main>
+            <section id="career">
+               <h2>Career</h2>
+                <a name ="Career"></a>
+  
+                   <ul> <a href="Img/Template Career Action Plan.pdf">Career Action Plan</a></ul>
+                
+               
+               <ul> <a href="Img/Template Job Application.pdf">Job Application</a></ul>
+                
 
-            <section id="career" class="career">
-              <div class="container">
-                   <h2>Career</h2>
-                    <a name ="Career"></a> 
-      
-                     <ul>
-                          <li><a href="Img/Template Career Action Plan.pdf">Career Action Plan</a></li>
-                        
-                       
-                        <li><a href="Img/Template Job Application.pdf">Job Application</a></li>
-                        
-        
-                         <li>   <a href="Img/_Letter of Introduction.pdf">Letter of Introduction</a></li>
-                        
-        
-                        <li><a href="Img/References.pdf">References</a></li>
-                        
-        
-                          <li>  <a href="Img/MyOfficalResume.pdf">Resume</a></li>
+                   <ul> <a href="Img/Template Letter of Introduction.pdf">Letter of Introduction</a></ul>
+                
 
-<!-- 
-                          <li>  
-                            <img src="Img/coverletter.svg" alt="">
-                            <a href="">Cover Letter</a>
-                            
-                        
-                        </li>
-                        
-                     </ul> -->
-              </div>
+              <ul>  <a href="Img/References.pdf">References</a></ul>
+                
 
-                   </section>
+                   <ul> <a href="Img/Template Resume.pdf">Resume</a></ul>
+                
+
+                
+
+
+
+
+
+            </section>
 
             <section id="semester1" class="semester">
                 <h2>Semester 1</h2>
@@ -223,38 +190,9 @@
     </div>
     <!-- end the container -->
 
-    <select
-     name="selstylesheet" id="selstylesheet" onchange="updateStyleSheet()">
-      <option value="indexstyle.css">Normal</option>
-        <option value="theme1.css">Theme1</option>
-        <option value="theme2.css">Theme2</option>
-       
-
-    </select>
-
     <script>
-       let selstylesheet;
-       selstylesheet = document.querySelector('#selstylesheet');
-
-       let styleLink;
-       styleLink = document.querySelector('#stylelink');
        
-       function updateStyleSheet()
-       {
-        stylelink.href = selstylesheet.value;
-        
-        localStorage.setItem('selectedStylesheet3175', selstylesheet.value);
-       }
-    
-       window.addEventListener('load', function()
-       {
-            let savedStylesheet = localStorage.getItem('selectedStylesheet3175');
-
-
-       });
       
-      
-
     </script>
 </body>
 </html>

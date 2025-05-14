@@ -1,32 +1,15 @@
-
-
-    /* Reset Browser */
-    *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding:0;
-    }
-
-
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: #9A7B4F;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(Img/firebackground.jpg);
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-attachment: fixed;
     background-size: cover;
-
-    /* Fix Browser Bounce */
-    overflow-x:auto;
-    width: 100%;
-    overscroll-behavior: none;
 }
-
-
- 
 
 
 #container{
@@ -51,11 +34,15 @@ body{
 
 
 #pageheader{
-    background-color:beige;
+    background-color:black;
     min-height:250px;
     padding:1rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    background-image: url(Img/Almond.jpg);
+    background-image: url(Img/deadhumanface.png);
+    background-repeat: no-repeat;
+    background-size: 950px 300px;
+    
+    
 }
 
 #logo{
@@ -105,7 +92,7 @@ blockquote{
 
     #pagenav a{
         color:black;
-        
+        text-decoration: none;
     }
 
     #topnav{
@@ -190,7 +177,10 @@ img#heroimage{
     text-align: center;
    border-top: 1px solid white;
    
-   
+}
+
+#pagefooter a{
+    color: black;
 }
 
 #singlealmond{
@@ -216,8 +206,13 @@ img#heroimage{
     border-top: px solid white;
 }
 a{
-    color:black;
+    color:white;
+    text-decoration: none;
 
+}
+a:hover{
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
 }
 button{
     padding: .2rem;
@@ -234,5 +229,6 @@ button:hover{
     position: absolute;
     top: 10px;
     right: 10px;
-    
 }
+
+
