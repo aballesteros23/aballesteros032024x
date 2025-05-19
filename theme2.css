@@ -3,8 +3,9 @@ html{
 }
 
 body{
-    background-color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(Img/wovlerinebackground.jpg);
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-attachment: fixed;
     background-size: cover;
@@ -12,19 +13,19 @@ body{
 
 
 #container{
-    background-color:blanchedalmond;
+    background-color:#1d2358;
     
     width:90%;             
     max-width: 1200px;
     margin:0 auto; 
     padding:1.2rem;
     border-radius:1.5rem;
-    
+    box-shadow: 5px 9px 9px 5px #8b2322 ;
 }
 
 
 #wrapper{
-
+    background-color: #dddddd;
     border-radius:1.9rem;                                                                                            
     padding:1.2rem;
     margin:0 auto;
@@ -32,12 +33,18 @@ body{
 }
 
 
+
+
 #pageheader{
-    background-color:beige;
+    background-color:#ffb40f;
     min-height:250px;
     padding:1rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    background-image: url(Img/Almond.jpg);
+    background-image: url(Img/wolverineHOT.png);
+    background-repeat: no-repeat;
+    background-size: 950px 300px;
+    
+    
 }
 
 #logo{
@@ -50,7 +57,7 @@ body{
     position: relative;
     right:25px;
     top:-25px;
-    background-image: url(Img/awesomelogo3.jpg);
+    /* background-image: url(Img/awesomelogo3.jpg); */
     background-size: cover;
 }
 
@@ -74,7 +81,7 @@ blockquote{
 
 
 #pagenav{
-    background-color: bisque;
+    background-color: #a30302;
     padding:1rem;
     color:black;
     text-shadow: 1px 1px 1px black;
@@ -87,11 +94,11 @@ blockquote{
 
     #pagenav a{
         color:black;
-        
+        text-decoration: none;
     }
 
     #topnav{
-    background-color: #ffe4c4;
+    background-color: #a30302;
     color:brown;
     text-shadow: 1px 1px 1px black;
     padding: 1rem;
@@ -107,26 +114,38 @@ blockquote{
 
 #media{
     min-height: 250px;
-    background-color: bisque;
+    background-color: #a30302;
     padding:1rem;
     color:burlywood;
     text-shadow: 1px 1px 1px black;
 
 }
 
-iframe{
+/* iframe{
     width:80%;
     background-color: white;
     aspect-ratio:16/9;
     margin:auto;
     display:block;
-}
+} */
 
 #pagemain{
     min-height:250px;
     padding:1rem;
-    background-color: bisque;
+    background-color: #a30302;
+    min-height: 800px;
+    background-image: url(Img/wolverinePOSING.png); background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+    
 }
+
+#pagemain p{
+    position: relative;
+    top: 600px;
+}
+
+
 img#heroimage{
     max-width:50%;
     margin:auto;
@@ -137,7 +156,7 @@ img#heroimage{
 
 
 #career{
-    background-color: bisque;
+    background-color: #a30302;
     color:burlywood;
     text-shadow: 1px 1px 1px black;
     padding: 1rem;
@@ -155,28 +174,31 @@ img#heroimage{
 
 
 #semester1{
-    background-color: bisque;
+    background-color: #a30302;
 }
 
 
 #semester2{
-    background-color: bisque;
+    background-color: #a30302;
 }
 
 
 #pagefooter{
-    background-color: bisque;
+    background-color: #a30302;
     color:burlywood;
     text-shadow: 1px 1px 1px black;
     padding: 1rem;
     text-align: center;
    border-top: 1px solid white;
    
-   
+}
+
+#pagefooter a{
+    color: black;
 }
 
 #singlealmond{
-    background-image: url(Img/singlealmond.png);
+    /* background-image: url(Img/singlealmond.png); */
     position: relative;
     width: 125px;
     height: 190px;
@@ -188,18 +210,27 @@ img#heroimage{
 }
 
 #subfoooter{
-    background-color: bisque;
+    background-color: #a30302;
     color:burlywood;
     text-shadow: 1px 1px 1px black;
     padding: 1rem;
     text-align: center;
-    min-height: 150px;
+    min-height: 200px;
     border-radius: 0 0 1.5rem 1.5rem;
     border-top: px solid white;
+    
+    position: relative;
+    background-size: 900px;
+    background-position-y: 170px ;
 }
 a{
-    color:black;
+    color:white;
+    text-decoration: none;
 
+}
+a:hover{
+    color:burlywood;
+    text-shadow: 1px 1px 1px black;
 }
 button{
     padding: .2rem;
@@ -217,3 +248,5 @@ button:hover{
     top: 10px;
     right: 10px;
 }
+
+
