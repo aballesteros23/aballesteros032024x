@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <h1>Ternary Operator</h1>
+
+    <script>
+
+
+     let age;
+    //  age = 21;
+
+    age = Math.floor(Math.random() * 80);
+
+    console.log(age);
+
+    if(age >= 18)
+    {
+    console.log("You can vote!");
+    
+    }
+
+    else {
+    console.log("You cannot vote!");
+    }
+
+    // Gambling
+    age >= 21 
+    //"You cannot gamble" - false code
+
+    // Ternary Operator
+    // condition ? true code : false code
+
+    age >=21 ? console.log("You can gamble.") : console.log("You cannot gamble.");
+
+    // Smoking
+    let message;
+    message = age >= 21 ? "You can smoke" : "You cannot smoke";
+
+    console.log(message);
+</script>
+</body>
+</html>
